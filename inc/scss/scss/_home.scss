@@ -1,0 +1,103 @@
+html{
+	body{
+		#fullpage{
+			.section{
+				text-align: center;
+				background-image: url('/fullPage.js-master/inc/img/background_home.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+
+			}
+			.intro{
+			
+				div.fp-tableCell{
+					background-color: $backgroundBlue;
+
+
+					div.content-box{
+						width: 40%;
+						background-color: $darkBlue;
+						margin: 0 auto;
+						padding: 40px 20px;
+						border-radius: 10px;
+						border: 3px solid white;
+						-webkit-box-shadow: 0px 1px 34px 8px rgba(0,0,0,0.2);
+						-moz-box-shadow: 0px 1px 34px 8px rgba(0,0,0,0.2);
+						box-shadow: 0px 1px 34px 8px rgba(0,0,0,0.2);
+
+
+						.fa-home{
+							color: $white;
+							font-size: 4em;
+
+						}
+
+						h2.content-title{
+							margin: 10px 0 100px 0;
+
+						}
+
+						button.stop-btn{
+							background-color: #60b3df;
+						    padding: 15px 50px;
+						    border-radius: 6px;
+						    color: #182c57;
+						    text-transform: uppercase;
+						    font-weight: 600;
+						    font-size: 1.5em;
+						    border: 1px solid $white;
+
+						}
+						
+					}
+				}
+			}
+			.information{
+				.fp-slides{
+					background-color: $backgroundDarkBlue;
+
+					.fp-slidesContainer{
+
+						.slide{
+							div.content-box{
+								width: 40%;
+								background-color: $blue;
+								margin: 0 auto;
+								padding: 40px 20px;
+								border-radius: 10px;
+								border: 3px solid white;
+								-webkit-box-shadow: 0px 1px 34px 8px rgba(0,0,0,0.2);
+								-moz-box-shadow: 0px 1px 34px 8px rgba(0,0,0,0.2);
+								box-shadow: 0px 1px 34px 8px rgba(0,0,0,0.2);
+
+
+								.fa-home{
+									color: $white;
+									font-size: 4em;
+
+								}
+
+								h2.content-title{
+									margin: 10px 0 100px 0;
+
+								}
+
+								button.stop-btn{
+									background-color: #60b3df;
+								    padding: 15px 50px;
+								    border-radius: 6px;
+								    color: #182c57;
+								    text-transform: uppercase;
+								    font-weight: 600;
+								    font-size: 1.5em;
+								    border: 1px solid $white;
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,131 @@
+/*@kbdesign.leeds*/
+
+/* BACKGROUND SIZE */
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+     -moz-background-size: $background-size;
+       -o-background-size: $background-size;
+          background-size: $background-size;
+          
+}
+
+/* TRANSITIONS */
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+
+}
+
+/* TRANSFORM */
+@mixin transform($transform...) {
+    -moz-transform:    $transform;
+    -o-transform:      $transform;
+    -webkit-transform: $transform;
+    transform:         $transform;
+
+}
+
+/* BOX SHADOW */
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+
+}
+
+/*media queries*/
+@mixin smallMobile {
+  @media (max-width: #{$s-mobile}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+@mixin largeMobile {
+  @media (max-width: #{$l-mobile}) {
+    @content;
+  }
+}
+@mixin tabletPortrait {
+  @media (max-width: #{$tablet-portrait}) {
+    @content;
+  }
+}
+
+@mixin tabletLandscape {
+  @media (max-width: #{$tablet-landscape}) {
+    @content;
+  }
+}
+
+@mixin smallDesktop {
+  @media (max-width: #{$s-desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin noTablet {
+  @media (min-width: #{$tablet-landscape}) {
+    @content;
+  }
+}
+
+@mixin minDesktop {
+  @media (min-width: #{$s-desktop}) {
+    @content;
+  }
+}
+
+/*Placeholder colour*/
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/* social icons buttons transition */
+@mixin absolute-center($position: relative) {
+  @include translate(-50%, -50%);
+  left: 50%;
+  position: $position;
+  top: 50%;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+
+
+/* https://gist.github.com/garyharan/957284 */
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+
+
+

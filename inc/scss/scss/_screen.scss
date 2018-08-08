@@ -1,0 +1,35 @@
+/*@kbdesign.leeds*/
+
+/*CLEARER*/
+.clear{clear: both;}
+body,html{margin: 0;padding:0;overflow-x: hidden;}
+* {margin: 0;padding: 0;box-sizing: border-box;}
+/*GLOBAL FONT STYLING*/
+h1,h2,h3,h4,h5,p{margin:0;padding:0;}
+h1,h2,h3,h4,h5{font-family: 'Open Sans', sans-serif;}
+h1{font-size: 35px; margin-bottom: 20px;}
+h2{font-size: 92px; font-weight: 800; margin-bottom: 0; 
+	@include largeMobile{font-size: 39px;}
+}
+h3{font-size: 30px; margin-bottom: 10px;}
+h4{font-size: 25px;}
+h5{font-size: 20px;}
+p{font-family: 'Open Sans', sans-serif; font-size: 22px; 
+	@include largeMobile{font-size: 10px;} 
+	@include tabletPortrait{font-size: 14px;} 
+	@include tabletLandscape{font-size: 16px;}
+}
+hr{
+	width: 200px; height: 2px; display: block; margin: 20px auto 30px auto; border: none;
+}
+ul{list-style-type:none;}
+li{text-decoration:none;}
+a{font-family: 'Open Sans'; text-decoration: none; text-transform: uppercase;}
+th{font-family: 'Open Sans'; font-weight: 700; text-transform: uppercase};
+td{font-family: 'Open Sans'; font-weight: 400;};
+.header-center{text-align: center; margin: 0 0 $xs-px 0;}
+.header-left{text-align: left; margin: 0 0 $xs-px 0;}
+.header-right{text-align: right; margin: 0 0 $xs-px 0;}
+
+
+
